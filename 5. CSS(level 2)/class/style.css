@@ -1,0 +1,16 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    color: brown;
+}
+
+#login{
+    background-color: aqua;
+}
+
+#signup{
+    background-color: brown;
+    color: white;
+}
