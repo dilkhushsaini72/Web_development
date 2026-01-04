@@ -28,6 +28,7 @@
   width: 100px;
   height: 100px;
   background: lightblue;
+  transform: skewX(20deg);
 }
 
 /* Qs4. Set a 2px horizontal & 2px vertical, green shadow 
@@ -37,6 +38,8 @@
   width: 100px;
   height: 100px;
   background: lightgreen;
+  box-shadow: 2px 2px 5px black;
+  margin: 10px 0px;
 }
 
 /* Qs5. Set Your picture or any picture as the background of the div
