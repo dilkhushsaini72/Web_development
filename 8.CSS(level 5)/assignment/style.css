@@ -1,0 +1,41 @@
+.container {
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  font-size: 50px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 14px;
+  background-color: gray;
+  font-weight: bold;
+
+}
+
+/* navbar style */
+nav{
+  /* height: 50px; */
+  width: 900px;
+  background-color: pink;
+  border: 3px solid skyblue ;
+  border-radius: 5px;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li{
+  list-style: none;
+  font-weight: bold;
+  font-size: 24px;
+}
