@@ -1,0 +1,65 @@
+<!-- h1 {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    
+    width: 300px;
+    height: 100px;
+    margin: 30px auto;       /* Centers the 300px box on the screen */
+    border: 2px solid black;
+}
+h1:hover{
+    background-color:rgb(56, 133, 18);
+    text-decoration:underline  blue;
+    box-shadow: 0 2px 10px black;
+}
+
+div{
+    
+    text-align: center;
+   
+    border: 2px solid black;
+}  this is CSS i am trying to put this in all content in center   and this is Html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <h1>Login page</h1>
+    <div>
+      <label for="fname">First Name:</label>
+      <input
+        type="text"
+        name="FName"
+        id="fname"
+        placeholder="Enter a name"
+        required
+      />
+      <br /><br />
+      <label for="Lname">Last Name:</label>
+      <input
+        type="text"
+        name="LastName"
+        id="Lname"
+        placeholder="Enter last name"
+      />
+      <br /><br />
+
+      <label for="mail">Email:</label>
+      <input
+        type="email"
+        name="Email"
+        id="mail"
+        placeholder="abc@gmail.com"
+        required
+      />
+      <br /><br />
+      <button type="submit">Submit</button>
+    </div>
+  </body>
+</html>

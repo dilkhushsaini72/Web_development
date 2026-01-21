@@ -1,0 +1,37 @@
+h2 i {
+    color: brown;
+}
+
+h1 span {
+    color: red;
+}
+
+#pets{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pets .card{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#pets img{
+    border-radius: 20px;
+    width: 100%;
+
+}
+
+@media (max-width: 375px) {
+    #pets{
+        flex-wrap: wrap;
+
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+}
