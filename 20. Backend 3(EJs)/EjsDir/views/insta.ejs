@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram Ejs</title>
+    <style>
+      img{
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcom @<%= data.name %> In Instagram</h1>
+    <span>followers <%= data.followers %></span>
+    <span>following <%= data.following %></span>
+    <h2>Your Posts</h2>
+    <% for(post of data.posts) { %>
+    <img src="<%=post.image %>" alt="Img">
+   <div>
+     <span>likes: <%= post.likes %></span>
+    <span>comments: <%= post.comments %></span>
+   </div>
+    <% } %>
+  </body>
+</html>
