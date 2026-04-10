@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h2>This is Instagram</h2>
+    <p>this page belongs to @<%= data.name  %></p>
+    <span>Followers: <%= data.followers %></span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>following: <%= data.following %></span>
+    <hr>
+    <h2>Your post</h2>
+    <% for(post of data.posts) { %>
+        <img width="100" src="<%= post.image %>"" alt="Img">
+        <span>Likes: <%= post.likes %> </span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>comments: <%= post.comments %></span>
+    <% } %>
+
+    <%- include("includes/footer.ejs") %>
+  </body>
+</html>
