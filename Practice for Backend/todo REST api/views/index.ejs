@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1 class="heading">My Todo app</h1>
+
+    <div class="container">
+      <div>
+        <form method="post" action="/todo">
+          <input name="task" placeholder="task" type="text" />
+          <input type="submit" value="Add" />
+        </form>
+
+        <div class="todo-list-container">
+          <% for (todo of todos) { %>
+          <div class="todo-item">
+            <div class="todo-list"><%= todo.task %></div>
+
+            <div class="todo-actions">
+              <a href="http://localhost:8080/todo/<%= todo.id %>/edit"
+                >Edit</a
+              >
+              <form method="post" action="/todo/<%= todo.id %>?_method=DELETE">
+                <input type="submit" value="Delete">
+              </form>
+              
+            </div>
+          </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
