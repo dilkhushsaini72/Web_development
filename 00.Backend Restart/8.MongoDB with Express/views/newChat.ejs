@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Chat ceating</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        gap: 4px;
+      }
+      body{
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+      .button{
+        background-color: greenyellow;
+        border-radius: 10px;
+        border: none;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-size: 20px;
+        box-shadow: 1px 1px 3px;
+        padding: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Create your new Chat here..</h2>
+    <form method="post" action="/chats">
+      <input type="text" name="from" placeholder="Who are you?" />
+      <textarea name="msg" placeholder="Write your message here.."></textarea>
+      <input type="text" name="to" placeholder="Add receiver.." />
+      <input class="button" type="submit" value="Create" />
+    </form>
+  </body>
+</html>
